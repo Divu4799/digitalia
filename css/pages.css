@@ -1,0 +1,139 @@
+:root{
+    --black : #131213;
+    --grey : #201F24;
+    --magenta : #E42EA6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    background: #1A191A;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+.header, .footer{
+    width: 80%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--black);
+    margin: auto;
+    color: #fff;
+}
+.logo{
+    width: 30%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    
+}
+.logo::before{
+    content: 'Digitalia';
+    width: 60px;
+    height: 70px;
+    background: var(--magenta);
+    border-radius: 50%;
+    position: absolute;
+    text-align: right;
+    padding-left: 1rem;
+}
+
+.navContainer{
+    width: 70%;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.nav{
+    position: relative;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    justify-content: flex-end;
+    right: 2rem;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.navItem{
+    padding: .5rem;
+}
+
+.navItem>a:hover{
+    color: var(--magenta);
+}
+
+.breadCrumbs{
+    width: 100vw;
+    height: 5rem;
+    background: var(--fade);
+    font-size: 1rem;  
+    
+}
+.breadCrumbs > ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: auto;
+    padding: 1.5rem;
+    position: absolute;
+    right: 10%;
+}
+
+.breadCrumbs > ul > li>a:hover{
+    color: var(--font);
+}
+
+.breadCrumbs > ul >li:last-child::before{
+    content: '|';
+    padding: 1rem;
+}
+#pages-head{
+    background-image: url(https://ld-wp.template-help.com/wordpress_64661/wp-content/uploads/2017/08/contacts_bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    padding: 150px 0px 150px 0px;
+    text-align: center;
+}
+.head-cont{
+    width: 60%;
+    margin: 3rem auto;
+}
+.head-cont h1{
+    font-size: 56px;
+}
+.head-cont p{
+    font-size: 25px;
+}
+.feature-cont{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.feature{
+    margin: 4rem auto;
+}
+.item{
+    flex: 0 0 40%;
+    margin: 1rem;
+}
+
+#foot{width: 100%;}
